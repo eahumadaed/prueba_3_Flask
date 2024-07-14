@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejercicio 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Ejercicio 2</h1>
+        <form action="{{ url_for('ejercicio2') }}" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="nombre1">Nombre 1:</label>
+                <input type="text" class="form-control" id="nombre1" name="nombre1" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre2">Nombre 2:</label>
+                <input type="text" class="form-control" id="nombre2" name="nombre2" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre3">Nombre 3:</label>
+                <input type="text" class="form-control" id="nombre3" name="nombre3" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
